@@ -1,3 +1,34 @@
+## How to run the app
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/AdamGKT/todolist.git
+cd todolist
+```
+
+2. Install dependencies:
+
+```bash
+yarn install
+```
+
+3. Start the Expo development server:
+
+```bash
+yarn start
+```
+
+4. Open the app on your device:
+
+- Use the Expo Go app on your iOS or Android device and scan the QR code
+- Or run on an emulator:
+
+```bash
+yarn android
+yarn ios
+```
+
 # Technical Choices
 
 This project is a Todo list application built with React Native, Expo, and TypeScript as part of a technical test for GeoRide.
