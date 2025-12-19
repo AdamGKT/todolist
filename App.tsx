@@ -1,12 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
-import { styles } from './styles';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import TodoScreen from './src/screens/TodosScreen';
+import { PaperProvider } from 'react-native-paper';
 
 export default function App() {
+  const queryClient = new QueryClient();
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <PaperProvider>
+      <QueryClientProvider client={queryClient}>
+        <TodoScreen />
+      </QueryClientProvider>
+    </PaperProvider>
   );
 }
