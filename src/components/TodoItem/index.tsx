@@ -27,7 +27,7 @@ export default function TodoItem({ item }: Props) {
   return (
     <Surface style={styles.surface}>
       <View style={styles.row}>
-        <Checkbox
+        <Checkbox.Android
           status={item.completed ? 'checked' : 'unchecked'}
           onPress={() =>
             updateTodo.mutate({ id: item.id, updates: { completed: !item.completed } })
