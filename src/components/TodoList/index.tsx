@@ -1,4 +1,4 @@
-import { FlatList, Text, View } from 'react-native';
+import { FlatList, Text } from 'react-native';
 import { ActivityIndicator } from 'react-native-paper';
 import { useTodos } from '@hooks/useTodos';
 import TodoItem from '../TodoItem';
